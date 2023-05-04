@@ -1,5 +1,5 @@
-"""Perception Approach
-@File: perception_approach.py
+"""Perceptron Approach
+@File: perceptron_approach.py
 @Author:
 """
 
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # from mpl_toolkits import mplot3d
 
 
-class PerceptionApproach:
+class PerceptronApproach:
 
     def __init__(self, omega1_: list, omega2_: list, W_: np.matrix,
                  c_: float) -> None:
@@ -92,7 +92,7 @@ omega2 = [
 W = np.mat([-1, -2, -2, 0]).T
 c = 1
 ''' solve '''
-test = PerceptionApproach(omega1, omega2, W, c)
+test = PerceptronApproach(omega1, omega2, W, c)
 print(test.solve())
 ''' plot '''
 fig = plt.figure()
